@@ -1,0 +1,56 @@
+/* gives the entire page a background and a specific font family as well as other general formatting */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+  background-color: rgb(0, 104, 104);
+}
+/* Sets the "Timed Coding Quiz" title to a larger font with a white text color */
+h1 {
+    font-size: 50px;
+    color: white;
+}
+/* sets the container class in body to a width and height of the entire viewport with flex properties and center elements */
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* displaying these as flex elements with a column flex direction has the buttons stack vertically which is very visably appealing */
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+/* centers the button elements */
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+/* this takes the button class and and gives it properties that make it very viable appealing while also being a good width and height to contain the text elements without warping */
+.button {
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    background: rgb(255, 12, 214);
+    border-radius: 4px;
+    padding: 5px;
+    margin: 5px;
+    width: 180px;
+    height: 50px;
+    text-decoration: none;
+    padding-top: 8px;
+}
+/* changes the hover aspect on the buttons so they turn blue and scale 10% larger so you know which button you have scrolled over */
+.button:hover {
+    background-color: blue;
+    transition: transform 150ms;
+    transform: scale(1.1);
+}
+
+
+
+
+

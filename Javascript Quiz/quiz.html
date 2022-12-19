@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8" />
+    <title>Quiz</title>
+    <link rel="stylesheet" href="assets/css/quiz.css">
+</head>
+<!-- This body contains our formatting for our quiz which will be filled in using JavaScript -->
+<body>
+    <div>
+        <p id="timeText">Time: <span id="timeDisplay"></span></p>
+    </div>
+    <div class="container">
+        <div id="game" class="justify-center flex-column">
+            <div id="question">Question</div>
+            <div class="choice-container" id="choiceOne">
+                <p class="choice-prefix">A</p>
+                <p class="choice-text">Choice1</p>
+            </div>
+            <div class="choice-container" id="choiceTwo">
+                <p class="choice-prefix">B</p>
+                <p class="choice-text">Choice2</p>
+            </div>
+            <div class="choice-container" id="choiceThree">
+                <p class="choice-prefix">C</p>
+                <p class="choice-text">Choice3</p>
+            </div>
+            <div class="choice-container" id="choiceFour">
+                <p class="choice-prefix">D</p>
+                <p class="choice-text">Choice4</p>
+            </div>
+        </div>
+    </div>
+    <!-- This connects the HTML to our JavaScript -->
+    <script src="quiz.js"></script>
+</body>
+</html>

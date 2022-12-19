@@ -1,0 +1,79 @@
+/* sets all page text to white */
+body {
+    color: white;
+}
+/* choice container is the buttons for the answers, this gives them the same look as the 
+homepage buttons except larger width */
+.choice-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    border-radius: 4px;
+    background: rgb(255, 12, 214);
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+/* sets all text on the page and a consistent background color, also general formatting */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    background-color: rgb(0, 104, 104);
+  }
+/* sets the viewport on the container holding the questions and answers, also gives 
+them flex properties and aligns them */
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* same hover properties as the homepage that distinguish when you are hovering over a button as 
+an indicator, also changes cursor to pointer to further distinguish */
+.choice-container:hover {
+    cursor: pointer;
+    background-color: blue;
+    transition: transform 150ms;
+    transform: scale(1.1);
+}
+/* same properties just on the p tag element as well */
+.choice-container:hover p {
+    cursor: pointer;
+    background-color: blue;
+    transition: transform 150ms;
+    transform: scale(1.1);
+}
+/* sets the font size for the text "time:" to be large and noticeable */
+#timeDisplay {
+    font-size: 50px;
+}
+/* sets the text of the actual timer to match the timeDisplay with some padding for spacing */
+#timeText {
+    font-size: 50px;
+    padding: 20px;
+}
+/* aligns the game over text and sets a large font size */
+.gameOver {
+    text-align: center;
+    margin: auto;
+    font-size: 50px;
+}
+/* sets a large input box with the same blueviolet background that will be used in highscores */
+#scoreName {
+    background-color: blueviolet;
+    font-size: 24px;
+}
+/* matches the save button to the scoreName box with some padding so the text is easier to read */
+#saveButton {
+    background-color: blueviolet;
+    color: white;
+    font-size: 24px;
+    padding: 3px;
+}
